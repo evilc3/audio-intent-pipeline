@@ -1,0 +1,12 @@
+.venv
+__pycache__
+.pytest_cache
+.vscode
+.git
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+.env
+final_results
+checkpoints

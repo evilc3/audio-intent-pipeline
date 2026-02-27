@@ -1,0 +1,35 @@
+{
+    "job_id": "c3bb1b28-badd-4c1b-833a-55731443550d",
+    "trace_id": "c3bb1b28-badd-4c1b-833a-55731443550d",
+    "status": "done",
+    "result": {
+        "intent": "billing",
+        "confidence": 1.0,
+        "action": "Retrieve and display recent invoice and credit card charge details for the user.",
+        "notes": "User is asking about a recent invoice and credit card charges.",
+        "status": "ok",
+        "model_used": "gemini-2.5-flash",
+        "fallback_triggered": false,
+        "prompt_version": "v1.0"
+    },
+    "metadata": {
+        "stt": {
+            "transcript": "I have a question about my recent invoice and the charges on my credit card.",
+            "language": "en",
+            "confidence": 0.9997181,
+            "duration_seconds": 3.99675,
+            "status": "ok"
+        },
+        "pipeline": {
+            "total_latency_ms": 6658.4,
+            "stt_latency_ms": 4684.0,
+            "llm_latency_ms": 1879.0,
+            "input_tokens_consumed": 190,
+            "output_tokens_generated": 64,
+            "estimated_cost_usd": 3.345e-05,
+            "retries": 0,
+            "created_at": "2026-02-27T13:14:19.272366+00:00",
+            "completed_at": "2026-02-27T13:14:25.931024+00:00"
+        }
+    }
+}

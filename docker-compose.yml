@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.env:/app/.env
+      - ./final_results:/app/final_results
+      - ./checkpoints:/app/checkpoints
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  ui:
+    build: .
+    command: streamlit run scripts/ui_demo.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./.env:/app/.env
+      - ./final_results:/app/final_results
+      - ./checkpoints:/app/checkpoints
+    environment:
+      - PYTHONUNBUFFERED=1
+      - API_BASE_URL=http://api:8000
+    restart: unless-stopped

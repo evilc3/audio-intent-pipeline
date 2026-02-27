@@ -1,0 +1,51 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# UV / virtualenv
+.venv/
+venv/
+env/
+
+# Checkpoints
+# checkpoints/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ruff / Black cache
+.ruff_cache/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Media (User request)
+media/
+
+# Specific Docs (User request)
+docs/stage_1_details.md
+docs/stage_2_details.md
+docs/stage_3_details.md

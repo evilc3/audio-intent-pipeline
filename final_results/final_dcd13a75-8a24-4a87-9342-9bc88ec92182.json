@@ -1,0 +1,35 @@
+{
+    "job_id": "dcd13a75-8a24-4a87-9342-9bc88ec92182",
+    "trace_id": "dcd13a75-8a24-4a87-9342-9bc88ec92182",
+    "status": "done",
+    "result": {
+        "intent": "account_support",
+        "confidence": 1.0,
+        "action": "Initiate account login troubleshooting steps.",
+        "notes": "User explicitly states trouble logging into their account.",
+        "status": "ok",
+        "model_used": "gemini-2.5-flash",
+        "fallback_triggered": false,
+        "prompt_version": "v1.0"
+    },
+    "metadata": {
+        "stt": {
+            "transcript": "I'm having trouble logging into my account. Can you help?",
+            "language": "en",
+            "confidence": 0.9997576,
+            "duration_seconds": 2.798,
+            "status": "ok"
+        },
+        "pipeline": {
+            "total_latency_ms": 3650.3,
+            "stt_latency_ms": 1926.4,
+            "llm_latency_ms": 1721.1,
+            "input_tokens_consumed": 185,
+            "output_tokens_generated": 56,
+            "estimated_cost_usd": 3.0675e-05,
+            "retries": 0,
+            "created_at": "2026-02-27T12:21:12.067947+00:00",
+            "completed_at": "2026-02-27T12:21:15.720109+00:00"
+        }
+    }
+}

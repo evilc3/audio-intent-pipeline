@@ -1,0 +1,35 @@
+{
+    "job_id": "bc1dd88f-4e13-437e-b680-86fb47f22f8d",
+    "trace_id": "bc1dd88f-4e13-437e-b680-86fb47f22f8d",
+    "status": "done",
+    "result": {
+        "intent": "technical_support",
+        "confidence": 1.0,
+        "action": "Initiate troubleshooting steps or connect to a technical support agent.",
+        "notes": "User reports application crashing during file upload.",
+        "status": "ok",
+        "model_used": "gemini-2.5-flash",
+        "fallback_triggered": false,
+        "prompt_version": "v1.0"
+    },
+    "metadata": {
+        "stt": {
+            "transcript": "The application is crashing every time I try to upload a file.",
+            "language": "en",
+            "confidence": 0.99976933,
+            "duration_seconds": 3.77325,
+            "status": "ok"
+        },
+        "pipeline": {
+            "total_latency_ms": 4919.6,
+            "stt_latency_ms": 2772.9,
+            "llm_latency_ms": 2143.8,
+            "input_tokens_consumed": 184,
+            "output_tokens_generated": 60,
+            "estimated_cost_usd": 3.18e-05,
+            "retries": 0,
+            "created_at": "2026-02-27T12:23:49.044258+00:00",
+            "completed_at": "2026-02-27T12:23:53.964226+00:00"
+        }
+    }
+}
