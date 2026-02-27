@@ -45,7 +45,7 @@ class FinalResult(BaseModel):
     intent: Optional[str]
     confidence: Optional[float]
     action: Optional[str]
-    notes: Optional[str]
+    reasoning: Optional[str]
     status: str
     model_used: Optional[str]
     fallback_triggered: bool

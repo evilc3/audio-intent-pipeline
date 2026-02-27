@@ -166,7 +166,7 @@ async def start_pipeline(
 
         # TTS stub — shows where real TTS would fit
         await _tts_stub(
-            text=llm_output.notes or "",
+            text=llm_output.reasoning or "",
             language=stt_output.language,
             trace_id=trace_id,
         )
@@ -351,7 +351,7 @@ def _assemble_final_output(
             "intent": llm_output.intent,
             "confidence": llm_output.confidence,
             "action": llm_output.action,
-            "notes": llm_output.notes,
+            "reasoning": llm_output.reasoning,
             "status": llm_output.status,
             "model_used": llm_output.model_used,
             "fallback_triggered": llm_output.fallback_triggered,

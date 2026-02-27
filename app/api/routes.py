@@ -120,7 +120,7 @@ async def get_result(job_id: str) -> JobStatusResponse:
                     "intent": job.llm_output.intent,
                     "confidence": job.llm_output.confidence,
                     "action": job.llm_output.action,
-                    "notes": job.llm_output.notes,
+                    "reasoning": job.llm_output.reasoning,
                     "status": job.llm_output.status,
                     "model_used": job.llm_output.model_used,
                     "fallback_triggered": job.llm_output.fallback_triggered,

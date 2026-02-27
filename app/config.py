@@ -34,6 +34,7 @@ class Settings(BaseSettings):
         "billing",
         "technical_support",
         "general_inquiry",
+        "prompt_attack",
         "out_of_scope",
         "unclear",
     ]
@@ -69,10 +70,10 @@ class Settings(BaseSettings):
     # Cost tracking (USD per token)
     gpt41_cost_per_input_token: float = 0.000003
     gpt41_cost_per_output_token: float = 0.000012
-    gpt41_mini_cost_per_input_token: float = 0.0000008
+    gpt41_mini_cost_per_input_token: float = 0.0000008 
     gpt41_mini_cost_per_output_token: float = 0.0000032
-    gemini_cost_per_input_token: float = 0.000000075
-    gemini_cost_per_output_token: float = 0.00000030
+    gemini_cost_per_input_token: float = 0.0000003
+    gemini_cost_per_output_token: float = 0.0000025
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 

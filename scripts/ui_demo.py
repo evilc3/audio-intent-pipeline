@@ -116,9 +116,9 @@ if uploaded_file is not None:
                 st.subheader("Recommended Action")
                 st.success(result_data["result"]["action"])
                 
-                if result_data["result"].get("notes"):
-                    with st.expander("Reasoning & Notes"):
-                        st.write(result_data["result"]["notes"])
+                if result_data["result"].get("reasoning"):
+                    with st.expander("Reasoning"):
+                        st.write(result_data["result"]["reasoning"])
 
                 # Bottom Row: Metrics
                 st.divider()

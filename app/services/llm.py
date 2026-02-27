@@ -229,7 +229,6 @@ async def _try_model(
                 prompt_tokens=usage.prompt_tokens,
                 completion_tokens=usage.completion_tokens,
                 estimated_cost_usd=cost,
-                prompt_version=settings.prompt_version,
             )
 
             return (
@@ -237,7 +236,7 @@ async def _try_model(
                     intent=parsed.intent,
                     confidence=parsed.confidence,
                     action=parsed.action,
-                    notes=parsed.notes,
+                    reasoning=parsed.reasoning,
                     status=status,
                     model_used=model_name,
                     fallback_triggered=is_fallback,
@@ -344,7 +343,7 @@ async def _try_gemini_model(
                     intent=parsed.intent,
                     confidence=parsed.confidence,
                     action=parsed.action,
-                    notes=parsed.notes,
+                    reasoning=parsed.reasoning,
                     status=status,
                     model_used=model_name,
                     fallback_triggered=is_fallback,
